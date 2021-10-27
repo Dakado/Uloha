@@ -6,9 +6,9 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 /**
  *
@@ -45,7 +45,7 @@ public class DataReader {
      */
     public List<String> readColumn(int sheetIndex, int columnIndex, int rowStartIndex) throws FileNotFoundException, IOException {
         List<String> result = new ArrayList();
-        try (FileInputStream fis = new FileInputStream(file); HSSFWorkbook wb = new HSSFWorkbook(fis);) {
+        try (FileInputStream fis = new FileInputStream(file); XSSFWorkbook wb = new XSSFWorkbook(fis);) {
             int currentRow = 0;
             for (Row row : wb.getSheetAt(sheetIndex)) {
                 if (currentRow >= rowStartIndex)
