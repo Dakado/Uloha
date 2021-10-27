@@ -25,8 +25,9 @@ public class Config {
                 if (cfg.exists()) {
                     ObjectMapper objectMapper = new ObjectMapper(new YAMLFactory());
                     config = objectMapper.readValue(cfg, Config.class);
+                    System.out.println("Config " + cfgFileName + " loaded successfully!");
                 } else {
-                    System.out.println("Config file does not exists!");
+                    System.out.println("Config file does not exists, generating fresh config file...");
                     config = new Config();
                     config.save();
                 }

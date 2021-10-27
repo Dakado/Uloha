@@ -36,7 +36,7 @@ public class ValidatorResult {
      * @return 
      */
     public boolean isValid() {
-        return messages.isEmpty();
+        return messages == null;
     }
     
     @Override

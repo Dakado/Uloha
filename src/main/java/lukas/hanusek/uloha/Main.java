@@ -24,7 +24,7 @@ public class Main {
             System.out.println(vr.toString());
             return;
         }
-        System.out.println("Input file is valid.");
+        System.out.println("Input file '" + file + "' is valid.");
         Config cfg = Config.getInstance();
         System.out.println("Searching input values at index " + cfg.getSheetIndex() + ":" + cfg.getColumnIndex() + ":" + cfg.getStartRowIndex() + " (sheet:column:row)");
         
