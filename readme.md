@@ -5,7 +5,7 @@ Prime finder is a simple Java command-line app to find all prime numbers in the 
 ## Usage
 
 You can start the application by using on of the included start scripts, for windows `start.bat` or for linux `start.sh`.
-Start files are preconfigures to pass `vzorek_dat.xlsx` as runtime argument which refers to the input data file.
+Start files are preconfigured to pass `vzorek_dat.xlsx` as runtime argument which refers to the input data file.
 
 ## Configuration
 
