@@ -1,0 +1,8 @@
+lukas\hanusek\uloha\data\DataConverter.class
+lukas\hanusek\uloha\validator\InputFileValidator.class
+lukas\hanusek\uloha\Main.class
+lukas\hanusek\uloha\validator\objects\ValidatorResult.class
+lukas\hanusek\uloha\util\MathUtil.class
+lukas\hanusek\uloha\data\DataReader.class
+lukas\hanusek\uloha\cfg\Config.class
+lukas\hanusek\uloha\validator\IValidator.class
