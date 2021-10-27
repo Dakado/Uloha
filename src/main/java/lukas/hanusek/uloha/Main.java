@@ -23,6 +23,7 @@ public class Main {
             System.out.println(vr.toString());
             return;
         }
+        System.out.println("Input file is valid.");
         
     }
     

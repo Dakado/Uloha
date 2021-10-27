@@ -38,17 +38,21 @@ public class DataReader {
      * Reads all values in the specified sheet and column as strings
      * @param sheetIndex
      * @param columnIndex
-     * @return list of all column values
+     * @param rowStartIndex
+     * @return
      * @throws FileNotFoundException
      * @throws IOException 
      */
-    public List<String> readColumn(int sheetIndex, int columnIndex) throws FileNotFoundException, IOException {
+    public List<String> readColumn(int sheetIndex, int columnIndex, int rowStartIndex) throws FileNotFoundException, IOException {
         List<String> result = new ArrayList();
         try (FileInputStream fis = new FileInputStream(file); HSSFWorkbook wb = new HSSFWorkbook(fis);) {
+            int currentRow = 0;
             for (Row row : wb.getSheetAt(sheetIndex)) {
+                if (currentRow >= rowStartIndex)
                 for (Cell cell : row) {
                     if (columnIndex == cell.getColumnIndex()) result.add(cell.getStringCellValue());
                 }
+                currentRow++;
             }
         }
         return result;
