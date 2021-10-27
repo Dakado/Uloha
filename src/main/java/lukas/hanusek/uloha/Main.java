@@ -1,5 +1,6 @@
 package lukas.hanusek.uloha;
 
+import lukas.hanusek.uloha.cfg.Config;
 import lukas.hanusek.uloha.validator.InputFileValidator;
 import lukas.hanusek.uloha.validator.objects.ValidatorResult;
 
@@ -24,7 +25,12 @@ public class Main {
             return;
         }
         System.out.println("Input file is valid.");
+        Config cfg = Config.getInstance();
+        System.out.println("Searching input values at index " + cfg.getSheetIndex() + ":" + cfg.getColumnIndex() + ":" + cfg.getStartRowIndex() + " (sheet:column:row)");
+        
         
     }
     
+
+
 }

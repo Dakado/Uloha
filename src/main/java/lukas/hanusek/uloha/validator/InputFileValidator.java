@@ -7,7 +7,7 @@ import lukas.hanusek.uloha.validator.objects.ValidatorResult;
  *
  * @author Lukas Hanusek
  */
-public class InputFileValidator implements IValidator{
+public class InputFileValidator implements IValidator {
 
     @Override
     public ValidatorResult validate(Object object) {
