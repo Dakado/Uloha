@@ -59,8 +59,6 @@ public class Main {
                 System.out.println(prime);
             }
             System.out.println("In total found " + primeNumbers.size() + " prime numbers out of " + numbers.size() + " numbers given as input.");
-        } catch (FileNotFoundException ex) {
-            Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
             Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
         }

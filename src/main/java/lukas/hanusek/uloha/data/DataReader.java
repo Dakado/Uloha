@@ -24,14 +24,9 @@ public class DataReader {
     /**
      * 
      * @param file
-     * @throws FileNotFoundException 
      */
-    public DataReader(String file) throws FileNotFoundException {
-        File f = new File(file);
-        if (!f.exists()) {
-            throw new FileNotFoundException("Data file " + f.getAbsolutePath() + " not found!");
-        }
-        this.file = f;
+    public DataReader(String file)  {
+        this.file = new File(file);
     }
 
     /**
